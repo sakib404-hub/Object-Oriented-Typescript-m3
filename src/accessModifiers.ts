@@ -36,3 +36,31 @@ console.log(
 
 sakibAccount.addMoney(109);
 console.log(sakibAccount);
+
+//? protected property
+class BankaAccount2 {
+    public readonly userId : number;
+    public userName : string;
+    protected balance : number;
+
+    constructor(
+    userId : number,
+    userName : string,
+    balance : number
+    ){
+        this.balance = balance;
+        this.userName = userName;
+        this.userId = userId;
+    }
+    addMoney(moneyIn : number){
+        //? this is a method of class BankAccount
+        this.balance = this.balance + moneyIn;
+    }
+}
+
+
+class StudentBankAccount extends BankaAccount2 {
+    test(){
+        console.log(this.balance); //? with the protected property balance can be used here!
+    }
+}
