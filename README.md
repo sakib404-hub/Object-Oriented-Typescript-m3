@@ -49,7 +49,7 @@ This repository showcases **Object-Oriented Programming (OOP) in TypeScript** wi
 <h3>Shakib Hossen</h3>
 
 <p>
-  💻 Passionate about TypeScript & OOP <br>
+  💻 Passionate about TypeScript & OOP, and NodeJs <br>
   🚀 Learning, building, and improving every day
 </p>
 
